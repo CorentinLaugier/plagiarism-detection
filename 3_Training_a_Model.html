@@ -14129,7 +14129,7 @@ True class labels:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>My model produced 2 false positives and 0 false negatives. The false positives could be due to the fact that to detect the hightly rephrased plagirized answers, the networks flags an answer as plagirized only if it has few similarities with the wikipedia page, which could be something that is true for a legitimate answer on the same topic. As for the abscense of false negatives, it means that our chosen model and features works well for our application.</p>
+<p>My model produced 2 false positives and 0 false negatives. The false positives could be due to the fact that to detect the highly rephrased plagiarized answers, the networks flags an answer as plagiarized only if it has few similarities with the Wikipedia page, which could be something that is true for a legitimate answer on the same topic. As for the absence of false negatives, it means that our chosen model and features works well for our application.</p>
 
 </div>
 </div>
@@ -14146,7 +14146,7 @@ True class labels:
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Firstly, I decided to use PyTorch to make my model because I knew it would give me the most control over the final result.</p>
 <p>My network is composed of an input layer, an output layer and one single hidden layer, which is a basic neural network structure. I am using a ReLU activation function for the input and hidden layer, and I am using a Sigmoid activation function for the output layer, because we are doing binary classification.</p>
-<p>I am using a dropout layer at the end of the hidden layer to reduce the risk of overfitting to the training data and I use two BatchNorm1d in-between the layer in order to improve training performance and provide each layer with a standardized input.</p>
+<p>I am using a dropout layer at the end of the hidden layer to reduce the risk of overfitting to the training data, and I use two BatchNorm1d in-between the layer in order to improve training performance and provide each layer with a standardized input.</p>
 <p>Lastly, I used 128 nodes for my hidden layer, I increased it from 64 to go from a 0.88 accuracy to 0.92.</p>
 
 </div>
